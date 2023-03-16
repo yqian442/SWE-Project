@@ -5,7 +5,7 @@ if ! command -v brew > /dev/null; then
   echo "Homebrew is not installed. Please install it first."
   echo "To install brew, run below command in terminal:"
   echo '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"'
-  exits
+  exits 1
 fi
 
 # Install Xcode Command Line Tools

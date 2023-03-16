@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: react-ui
+  name: chatgpt-api
 spec:
   selector:
-    app: react-ui
+    app: chatgpt-api
   ports:
   - name: http
     port: 3000
