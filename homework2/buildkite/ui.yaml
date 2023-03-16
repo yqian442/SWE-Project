@@ -5,5 +5,5 @@ steps:
   - command: " docker build -f ./homework2/docker/ui.Dockerfile -t ui:now_latest ./homework1/ui/"
     label: "docker build ui"
 
-  - command: "kubectl apply -f ./homework2/kubernetes/ui/deployment.yaml"
+  - command: "buildkite-agent pipeline upload homework3/buildkite/ui/buildkite.yaml"
     label: "deploy ui"
